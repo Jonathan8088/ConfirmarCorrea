@@ -9,13 +9,10 @@ package confirmarcorreo;
  *
  * @author Jonathan
  */
-public class ConfirmarCorreo {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        VentanaPrincipal v = new VentanaPrincipal();
-    }
+public interface Interface {
+    
+    public void ValidarCorreo();
+    
+    public void RetornarRespuesta();
     
 }
