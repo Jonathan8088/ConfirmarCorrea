@@ -11,8 +11,8 @@ package confirmarcorreo;
  */
 public interface Interface {
     
-    public void ValidarCorreo();
+    public boolean ValidarCorreo(String email);
     
-    public void RetornarRespuesta();
+    public void RetornarRespuesta(boolean r);
     
 }

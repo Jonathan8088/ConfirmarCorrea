@@ -15,7 +15,7 @@ import javax.swing.JTextArea;
  *
  * @author Jonathan
  */
-public class VentanaPrincipal extends JFrame implements Interface {
+public class VentanaPrincipal extends JFrame {
     /**
      * atributo que hace referencia a la barra de menu
      */
@@ -26,6 +26,8 @@ public class VentanaPrincipal extends JFrame implements Interface {
     private JMenu menu;
     
     private PanelTitulo panelImagen;
+    
+    private PanelCorreo panelCo;
    
 /**
  * constructor de la clase
@@ -49,6 +51,10 @@ public class VentanaPrincipal extends JFrame implements Interface {
         add(panelImagen);
         
         
+       panelCo = new PanelCorreo();
+       panelCo.setBounds(10, 220, 780, 350);
+       add(panelCo);
+       
        
         
         setVisible(true);
@@ -56,17 +62,6 @@ public class VentanaPrincipal extends JFrame implements Interface {
 /**
  * metodo de la clase interface que valiuda el correo
  */
-    @Override
-    public void ValidarCorreo() {
-        
-    }//ValidarCorreo
-/**
- * metodo de la clase interface que retorna el mensaje de validacion del correo
- */
-    @Override
-    public void RetornarRespuesta() {
-       
-    }//RetornarRespuesta
 
     
     

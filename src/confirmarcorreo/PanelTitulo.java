@@ -22,7 +22,7 @@ public class PanelTitulo extends JPanel{
     
      private JLabel etiquetaNombre;
      
-     private JLabel etiquetaDiscoTienda;
+     
 
     public PanelTitulo() {
         setBackground(Color.WHITE);
