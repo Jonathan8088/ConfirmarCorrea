@@ -59,9 +59,7 @@ public class PanelCorreo extends JPanel implements Interface, ActionListener{
         boolean r = ValidarCorreo(areaCorreo.getText());
         RetornarRespuesta(r);
         
-        aviso = new JLabel("Digite su correo: ");
-        aviso.setBounds(250, 130, 100, 20);
-        add(aviso);
+        
       
         
     }
@@ -82,10 +80,13 @@ public class PanelCorreo extends JPanel implements Interface, ActionListener{
            aviso = new JLabel("correo valido ");
            aviso.setBounds(250, 130, 100, 20);
            add(aviso);
+           setVisible(true);
        }else{
+           
            aviso = new JLabel("correo invalido ");
            aviso.setBounds(250, 130, 100, 20);
            add(aviso);
+           setVisible(true);
        } 
        
     }
